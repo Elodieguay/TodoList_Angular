@@ -8,7 +8,7 @@ import { CommonModule } from "@angular/common";
 
 // }
 
-export interface todoItem {
+export interface TodoItem {
     
     title?: string 
     completed?: boolean;

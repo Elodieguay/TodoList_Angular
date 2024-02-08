@@ -6,13 +6,15 @@ import { Component, Output, EventEmitter } from '@angular/core';
   imports: [],
   template: `
     <!-- <input [value]="works" (keyup)="submitValue('Button Clicked!')"> -->
-    <input #inputElementRef
+    <input class="todo-input"
+        #inputElementRef
         [value]="title"
         (keyup.enter)="submitValue(getInputValue($event))">  
     
        <!-- {{ generateTitle() }} -->
     <div>
-      <button (click) = "submitValue(inputElementRef.value)" >
+      <button class="btn"
+        (click) = "submitValue(inputElementRef.value)" >
         Save
       </button>
     </div>
