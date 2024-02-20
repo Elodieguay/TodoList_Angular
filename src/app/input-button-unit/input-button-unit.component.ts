@@ -5,13 +5,11 @@ import { Component, Output, EventEmitter } from '@angular/core';
   standalone: true,
   imports: [],
   template: `
-    <!-- <input [value]="works" (keyup)="submitValue('Button Clicked!')"> -->
     <input class="todo-input"
         #inputElementRef
         [value]="title"
+        placeholder="Write a task"
         (keyup.enter)="submitValue(getInputValue($event))">  
-    
-       <!-- {{ generateTitle() }} -->
     <div>
       <button class="btn"
         (click) = "submitValue(inputElementRef.value)" >
@@ -25,7 +23,7 @@ import { Component, Output, EventEmitter } from '@angular/core';
 export class InputButtonUnitComponent {
   @Output() submit:EventEmitter<string> = new EventEmitter<string>();
 
-  title = 'Ecris une tache'
+  title = ''
     
   submitValue(newTitle: string): void {
     console.log('avantsubmit');

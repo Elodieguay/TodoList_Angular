@@ -4,19 +4,20 @@ body{
 }
 
 h1{
-    color: crimson;
     justify-items: center;
     align-items: center;
 }
 
 .todo-input {
-    padding: 4px 10px 4px;
+
+    padding: 4px 10px 4px 20px;
     font-size: 16px;
     font-family: 'Lucida Grande', Verdana, sans-serif;
     line-height: 20px;
     border: solid 1px #dddddd;
     border-radius: 5px;
     flex-grow: 1;
+    justify-content: center;
   }
   
   :host(:not([hidden])) {

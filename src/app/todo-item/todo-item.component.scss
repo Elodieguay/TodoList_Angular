@@ -1,11 +1,18 @@
 .todo-item {
     padding: 10px 0;
     border-top: solid 1px #ddd;
-    border-color: aqua;
-    min-height: 30px;
+    min-height: 50px;
     line-height: 30px;
     display: flex;
     justify-content: space-between;
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+    border-radius: 6px;
+    padding-left: 5px;
+    padding-right: 5px;
+   
+
   }
   
   .todo-checkbox {
@@ -16,6 +23,8 @@
   .todo-title {
     flex-grow: 1;
     padding-left: 11px;
+    padding-top: 7px;
+    font-weight: 400;
   }
 
   .todo-complete {

@@ -1,21 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+
+
 html, body, div, span,
 h1, p, ul, li {
+  font-family: 'Roboto', sans-serif;
   padding: 0;
   border: 0;
-  font: inherit;
   vertical-align: baseline;
 }
-html, body{
-  background-color: rgb(241, 48, 112);
+html{
+  position: relative;
+  background-color: rgb(145, 180, 201);  
+  background-color: transparent;
+  background-image: url('./assets/flow.jpg');
+  background-size: cover;
+
+
 }
 
 body {
-  // background: #ffffff;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 22px;
   color: #404040;
-  font-family: 'Lucida Grande', Verdana, sans-serif;
 }
 
 ol, ul {
@@ -33,6 +38,8 @@ ol, ul {
   line-height: 24px;
   cursor: pointer;
   vertical-align: bottom;
+  
+  
 }
 
 .btn:hover {
@@ -40,18 +47,19 @@ ol, ul {
 }
 
 .btn-red {
-  background: red;
+  background: none;
 }
 
 .btn-red:hover {
-  background: darkred;
+  background: rgb(239, 101, 101);
 }
 
-.app-title {
-  font-size: 52px;
+.app-title, .subTitle{
+  font-size: 28px;
   line-height: 52px;
   margin-bottom: 30px;
   font-weight: bold;
   text-align: center;
   letter-spacing: -0.8px;
 }
+

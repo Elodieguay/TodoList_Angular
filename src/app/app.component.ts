@@ -1,5 +1,4 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-// import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import {ListManagerComponent } from './list-manager/list-manager.component';
 
@@ -7,18 +6,21 @@ import {ListManagerComponent } from './list-manager/list-manager.component';
   selector: 'app-root',
   standalone: true,
   imports: 
-  // [RouterOutlet]
   [ CommonModule, ListManagerComponent]
   ,
   template: `
     <main>
     <header class="brand-name">
-      <img class="brand-logo" src="" alt="logo" aria-hidden="true">
+      <!-- <img class="brand-logo" src="./assets/flowers.jpg" width="40px" alt="logo" aria-hidden="true"> -->
+      {{dateObj | date}}
     </header>
     <section class="content">
       <h1  class="app-title">
-        Welcome to {{ title }}!
+        {{ title }}
       </h1>
+      <p class="subTitle">
+        {{content}}
+      <p>
       <todo-list-manager></todo-list-manager>
     </section>
   </main> 
@@ -26,5 +28,7 @@ import {ListManagerComponent } from './list-manager/list-manager.component';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'My todo-list';
+  title = 'My tasks for today';
+  dateObj: string = Date();
+  content: String =  'Try, do your best and you will succeed '
 }
