@@ -1,8 +1,8 @@
 <div align="center">
   
-# TodoList with Angular 17
+# To Do List with Angular 17
 
-Create a nice TodoList with the framework Angular in order to learn the basis.
+Create a nice To Do List with the framework Angular in order to learn the basis.
 
 I worked with Angular v17, CSS with SaSS, and the Localstorage
 
